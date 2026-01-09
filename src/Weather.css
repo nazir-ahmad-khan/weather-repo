@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.heading {
+    background-color: aqua;
+}
+
+/* .prante-container{
+    display: flex;
+} */
+.second-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 300px;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid red;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    border: 2px solid yellow;
+}
+
+.country-code {
+    background-color: green;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-form input {
+    height: 55px;
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.todo-form button {
+    width: 20%;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.list-container {
+    padding: 10px 0;
+}
+
+.list-container li {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* New Weather CSS Start */
+
+.main-container {
+    background-color: #5397e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-container {
+    border: 2px solid red;
+    padding: 20px;
+    width: 35%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.search {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.prant-searchBox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    z-index: 20;
+}
+.search-box{
+    position: absolute;
+    right: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box input{
+    width: 300px;
+    height: 30px;
+    border: 2px solid #FFE;
+    border-radius: 6px 0 0 6px;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.search i {
+    display: flex;
+    font-size: 30px;
+    /* background-color: yellow; */
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.info-weather {
+    border: 2px solid green;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-weather h2 {
+    color: #f0eeee;
+    font-size: 22px;
+}
+.info-weather h2 span {
+    font-size: 14px;
+    background-color: #81b4eb;
+    color: #f0eeee;
+    font-weight: 100;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+.info-weather h3 {
+    color: #f0eeee;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.info-weather img {
+    font-size: 80px;
+}
+
+.info-weather span {
+    font-size: 110px;
+}
+
+.update-date {
+    color: #f0eeee;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 30px 10px;
+}
+
+.extra-detail-container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    gap: 16px;
+}
+
+.updated-weathers {
+    background-color: #6aa6e5;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.child-time-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.child-time-container h3 {
+    color: #f0eeee;
+    font-size: 16px;
+    font-weight: 300;
+}
+.child-time-container i {
+    font-size: 35px;
+}
+.updated-weathers-days {
+    background-color: #6aa6e5;
+    padding: 10px 0;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.child-day-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.child-day-container h3{
+    color: #f0eeee;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+.child-day-container p{
+    color: #f0eeee;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+.child-day-container i{
+    font-size: 35px;
+}
+.child-weather-container-info{
+    background-color: #6aa6e5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;   
+}
+.child-weather-container-info h3{
+    display: flex;
+    justify-content: space-between;
+    color: #f0eeee;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
