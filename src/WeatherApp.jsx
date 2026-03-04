@@ -4,6 +4,7 @@ import './WeatherApp.css';
 import { BiSearch } from "react-icons/bi";
 import { format } from 'date-fns';
 import { useState } from 'react';
+import bgImage from "./assets/background.gif"
 
 function WeatherApp() {
 
@@ -72,8 +73,18 @@ function WeatherApp() {
                                     </div>
                                 </> :
                                 (
-                                    <div className="info-container">
-                                        <h4>No Data Found !</h4>
+                                    <div className="found-title"
+                                    style={{
+                                        backgroundImage: `url(${bgImage})`,
+                                        backgroundSize: "cover",
+                                        backgroundPosition: "center",
+                                        backgroundRepeat: "no-repeat"
+                                    }}
+                                    >
+                                        {/* <span> */}
+
+                                        <h4 className='found-title'>No Data Found !</h4>
+                                        {/* </span> */}
                                     </div>
                                 )
                         }
